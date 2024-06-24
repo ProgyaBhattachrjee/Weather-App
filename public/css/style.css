@@ -1,0 +1,90 @@
+body{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: left;
+    font-family: sans-serif;
+    overflow: hidden;
+}
+header{
+    font-size: 100px;
+    color: aliceblue;
+    text-shadow: -1px -1px 0 rgb(76, 75, 75), 1px 1px 0 rgb(76, 75, 75);
+}
+.hd {
+    display: flex;
+    gap: 100px;
+  border-bottom: 1px solid rgb(153, 207, 254);
+  padding: 20px;
+}
+.hd a{
+    color: rgb(76, 75, 75);
+    text-decoration: none;
+    font-weight: bold;
+}
+.hd a:hover{
+    transform: scale(1.2);
+    color: black;
+}
+footer{
+    position: absolute;
+    top: 92%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: aliceblue;
+    color: rgb(76, 75, 75);
+    border-top: 1px solid grey;
+}
+.box{
+    display: flex;
+    gap: 100px;
+    padding: 20px;
+}
+.weather-container {
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgb(190, 220, 246);
+    background-color: #ffffff;
+}
+
+.weather-container1 {
+    text-align: center;
+    padding: 20px;
+   height: 100px;
+   width: 100px;
+    border-radius: 50%;
+    background-color: #ffffff;
+}
+h1 {
+    margin-bottom: 10px;
+}
+
+.temp {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 5px 0;
+}
+#cty{
+    border: 5px solid aliceblue;
+}
+button[type="submit"] {
+    background-color: rgb(153, 207, 254);
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button[type="submit"]:hover { /* Change style on hover */
+    background-color: rgb(94, 180, 254);
+  }

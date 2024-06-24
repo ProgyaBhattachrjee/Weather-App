@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+     {{>header}}
+<form action="/submit-city" method="post">
+  <input type="text" placeholder="City" id="cty" name="city">
+  <button type="submit" >Submit</button>
+</form>
+<div class="box">
+<div class="weather-container1"><img src="/image/{{im}}.svg" alt="image">
+<p >  {{im}}   </p></div>
+<div class="weather-container">
+        <h1>{{city}}</h1>
+        <p class="temp">{{temp}} °C</p>
+        <p>Pressure: {{pressure}} hPa</p>
+        <p>Humidity: {{humidity}}%</p>
+        <p>Wind: {{wind}} m/s</p>
+    </div>
+          
+</div>
+    {{>foot}}
+</body>
+</html>
